@@ -29,5 +29,5 @@ curl http://localhost:8080/protected -H "x-auth-user: ssoUserName"
 curl http://localhost:8080/protected -u basicUser:basicPassword
 
 # passing valid both basic auth and SSO credentials should use SSO to authenticate
-curl http://localhost:8080/protected  -u basicUser:basicPassword -H "x-auth-user: ssoUser"
+curl http://localhost:8080/protected -u basicUser:basicPassword -H "x-auth-user: ssoUser"
 ```
